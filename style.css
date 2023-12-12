@@ -1,0 +1,185 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-shadow: border-box;
+}
+
+ul {
+	list-style: none;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+}
+
+.grid{
+	display: grid;
+}
+
+.grid--1x2 {
+	grid-template-columns: repeat(2, minmax(auto, 1fr));
+}
+
+.grid--1x3 {
+	grid-template-columns: repeat(3, minmax(auto, 1fr));
+}
+
+.btn {
+	display: inline-block;
+	border: 0;
+	background: 0;
+	padding: .5em 1.5em;
+	font-size: 1.125rem;
+	font-weight: 700;
+	transition: 250ms;
+	background: orange;
+	color: #fff;
+	border-radius: 100px;
+
+	&:hover {
+		background: red;
+		cursor: pointer;
+	}
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2.5rem;
+}
+
+.flow-content--s > * + *  {
+	margin-top: .5rem !important;
+}
+.flow-content--m > * + *  {
+	margin-top: 1rem !important;
+}
+.flow-content--xm > * + *  {
+	margin-top: 1.5rem !important;
+}
+.flow-content--l > * + *  {
+	margin-top: 3rem !important;
+}
+.flow-content--xl > * + *  {
+	margin-top: 3.5rem !important;
+}
+
+body {
+	min-height: 100vh;
+	background: linear-gradient(blue,purple);
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+
+.main-wrapper {
+	background: #fff;
+	border-radius: 15px;
+	padding: 3rem;
+}
+
+input {
+	border: 0;
+	padding: .5rem 1rem;
+	background: transparent;
+	outline: 0;
+}
+
+
+form {
+	border: 0;
+	background: #eee;
+	border-radius: 15px;
+	margin-bottom: 3rem ;
+	display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	gap: 1.125rem;
+	margin-bottom: 1rem;
+}
+
+header i {
+	font-size: 1.5rem;
+}
+
+ul li {
+	cursor: pointer;
+	font-size: 1.125rem;
+}
+
+.task-contents {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.task-contents i{
+	cursor: pointer;
+	padding: .8rem;
+	border-radius: 50%;
+	transition: 250ms background;
+	&:hover{
+		background: #ddd;
+	}
+}
+
+.task-list{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	gap: 1rem;
+
+	li.item{
+		font-size: 1.3rem;
+	}
+}
+
+.icons .fa-solid{
+	color: #fff;
+	cursor: pointer;
+	transition: transofmr 250ms;
+
+	&:hover{
+		opacity: .9;
+	}
+}
+
+.fa-solid{
+	border-radius: 50%;
+	padding: .5rem;
+}
+
+.fa-check{
+	background: green;
+}
+
+.fa-trash{
+	background: red;
+}
+
+.fa-pen{
+	background: rgb(15, 15, 133);
+}
+
+.task-list .checked{
+	text-decoration: line-through;
+}
+
+@media (max-width: 31.25em) {
+	html{
+		font-size: .8rem;
+	}
+}
